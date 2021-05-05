@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 import { setCurrentLocation, getWeatherData, setFetchingTrue, clearLocation } from '../redux/actions.js'
 
-const CurrentLocation = ({ setLocation, getWeatherData, setFetching }) => {
+const CurrentLocation = ({ setCurrentLocation, getWeatherData, setFetching }) => {
 
     const clickHandler = () => {
         setFetching()
@@ -23,8 +23,8 @@ const CurrentLocation = ({ setLocation, getWeatherData, setFetching }) => {
     }
 
     return (
-        <div>
-            <button className="location-button" onClick={clickHandler}>Get Current Location</button>
+        <div className="location">
+            <button className="location-button" onClick={clickHandler}>Get More Data From Current Location</button>
         </div>
     )
 }

@@ -51,9 +51,6 @@ const MainPage = ({ currentLocation, weatherData }) => {
                         value={query}
                         onKeyPress={search} />
                 </div>
-                <div>
-                    <CurrentLocation />
-                </div>
                 {(typeof weather.main != "undefined") ? (
                     <div>
                         <div className="location-box">
@@ -75,6 +72,9 @@ const MainPage = ({ currentLocation, weatherData }) => {
                     <div className="unknown-location">
                     </div>
                 )}
+                <div>
+                    <CurrentLocation />
+                </div>
                 <div>
                     <WeatherContainer />
                 </div>

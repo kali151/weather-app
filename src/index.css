@@ -111,7 +111,7 @@ main {
     display: block;
     font: inherit;
     padding: 5px;
-    margin: 0 5px;
+    margin: auto;
     width: 150px;
     border: 1px solid #AA6817;
     cursor: pointer;
